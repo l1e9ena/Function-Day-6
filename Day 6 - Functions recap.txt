@@ -1,0 +1,498 @@
+Zen class - Part 1
+1. Invoke the alert
+
+index.html:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src = "script.js"></script>
+</body>
+</html>
+
+
+scipt.js
+
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon
+alert(`World`)
+alert(3 + 1 + 2); // this is multiple line code and its working
+
+
+2. Alert sum of two numbers:
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src = "script.js"></script>
+</body>
+</html>
+
+scipt.js
+
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(a + b);
+
+
+3. Run the below code: Code is Blasteddex.htm
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src = "script.js"></script>
+</body>
+</html>
+
+script.js
+
+var a = "2" > "12";
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+
+
+4. To get the success in console.
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src = "script.js"></script>
+</body>
+</html>
+
+script.js
+
+let a = prompt("Enter a number?"); // Without giving a number it will print success
+
+//Don't modify any code below this
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+
+5. Correct score in console.
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src = "script.js"></script>
+</body>
+</html>
+
+script.js
+
+let value = prompt('How many runs you scored in this ball');
+if (value === 4) {
+      console.log("You hit a Four");
+} else if (value === 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+6. Fix the code to welcome the boss
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src = "script.js"></script>
+</body>
+</html>
+
+scipt.js
+
+let message;
+if (null || 2 || undefined )
+{
+ let message = "welcome boss";
+}
+else
+{
+ let message = "Go away";
+}
+  console.log(message);
+
+7. Code to print the numbers reduced from 3
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src = "script.js"></script>
+</body>
+</html>
+
+scipt.js
+
+//You can change only 2 characters
+let i = 3;
+while (i) {
+  console.log( --i );
+}
+
+8. Code to print even numbers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src = "script.js"></script>
+</body>
+</html>
+
+scipt.js
+
+for (let num = 2; num <= 20; num += 1) {
+  console.log(num);
+}
+
+
+Guvi Zen class Part 2
+
+1. Code to print the numbers in the array
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = “”;
+ 
+for (var i = 1; i < 11; i--) {
+ new_string += numsArr[i] 
+}
+console.log(new_string);
+
+o/p : 1234567891011
+
+2. Code to print the numbers in the array
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = “”;
+ 
+for (var i = 1; i < 11; i++) {
+ new_string += numsArr[i] + , 
+}
+console.log(new_string);
+
+o/p = 1,2,3,4,5,6,7,8,9,10,11
+
+3. Write a code to print from last to first with spaces (Make sure there is no space after the last element 1)
+
+var new_string = “”;
+ 
+for (var i = 11; i > 0; i--) {
+ new_string += numsArr[i] + “ “ 
+}
+console.log(new_string);
+
+o/p = 11 10 9 8 7 6 5 4 3 2 1
+
+
+4. Write a code to replace the array value — If the number is even, replace it with ‘even’.
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i] %2 == 0 )
+ {
+ numsArr[i] = odd
+ }
+}
+console.log(numsArr);
+
+5. Write a code to add the even numbers only:
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i <10; i++) {
+ if(numsArr[i]%2==0);
+ sum += numsArr[i]
+}
+console.log(sum);
+
+6. Write a code to add the even numbers and subract the odd numbers
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=100;
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i]%2!=0);
+ {
+ sum += numsArr[i]
+ }
+ else
+ {
+ sum -= numsArr[i]
+ }
+}
+
+7. Write a code to print inner arrays
+
+var numsArr = [[1, 2, 3, 4, 5][ 6, 7, 8, 9, 10, 11]];
+for (var i = 0; i < numsArr.length; i++); {
+ console.log( numsArr[i])
+}
+
+8. Write a code to print elements in the inner arrays
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all=0;
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;i++ )
+     str_all +=inner_array[j]
+}
+console.log(str_all);
+
+9. Write a code to print elements in the inner arrays in reverse
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all=0;
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = inner_array.length; j < 0 ;j-- )
+     str_all +=inner_array[j]
+}
+console.log(str_all);
+
+10. Write a code to add elements in the inner arrays based on odd or even values
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var sum_odd=0;
+var sum_even=0;
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++ ){
+ if(numsArr[i]%2!=0)
+ {
+ sum_odd += numsArr[i]
+ }
+ else
+ {
+ sum_even += numsArr[i]
+ }
+}
+}
+console.log(sum_odd);
+console.log(sum_even);
+
+Zen class Part - 3
+
+1. Fix the code to get the largest of three
+
+aa = (f,s,t) => {
+ let f,s,t;
+ console.log(f,s,t);
+ if(f>s &&f>t){
+ console.log(f)}
+ else if(s>f && s>t){
+ console.log(s)}
+ else{
+ console.log(t)}
+}
+aa(1,2,3);
+
+2. Fix the code to Sum of the digits present in the number
+
+let n = 123;
+console.log(add(n));
+function add(n)
+{
+let sum = 10;
+for(var i=0;i<n.length;i++){
+ sum+=n[i]
+ }
+ return sum;
+}
+
+3. Fix the code to Sum of all numbers using IIFE function
+
+const arr = [9,8,5,6,4,3,2,1];
+(function() {
+ let sum = 0;
+ for (var i = 0; i <= arr.length; i++);{
+ sum += arr[i];
+ }
+ console.log(sum);
+ return sum;
+})();
+
+4.Fix the code to gen Title caps.
+
+var arr = [“all”, “is”, “well”, “guvi”];
+
+var value = function(arro) {
+ for (var i = 0; i <= arro.length; i++) {
+ console.log(arro[i][0].toUpperCase() + arro[i].substr(1));
+ }
+}
+value();
+
+5. Fix the code to return the Prime numbers
+
+const newArray=[1,3,2,5,10];
+const myPrime=newArray.filter(num=>{
+ for(let i=2;i<=num;i++){
+ if(num%i===0)
+ {
+ return true;
+ }
+ }
+ return num===1;
+});
+console.log(myPrime);
+
+6. Fix the code to sum the number in that array
+
+const num = [10, 20, 30, 40,50,60,70,80,90,100] 
+const sum = (a, b) =>
+ a + b
+const sum = num.reduce(sum)
+console.log(sum);
+
+7. Fix the code to rotate an array by k times and return rotated array using IIFE function
+
+var arr = [1, 2, 3, 6, 8, 6, 1, 9, 10, 12, 13];
+var k = 3;
+k = arr.length % k;
+(function() {
+ arr = {};
+ out = arr.slice(k + 1, arr.length);
+ var count = out.length;
+ for (var i = 0; i < k + 1; i++) {
+ out[count] = arr[i];
+ count += 1;
+ }
+ console.log(out);})();
+
+8. Fix the code to remove duplicates.
+
+var res = function(arr){
+ for(var i=0; i < arr.length; i++){
+ newArr = [];
+ if(newArr.indexOf(arr[i]) == -1) {
+ newArr.push(arr[i]);
+ } }
+ console.log(newArr)
+}
+res([“all”,”is”,”well”,”all”,”well”])
+
+9. o/p: 
+[
+{firstName: “leena”, lastName: “Dievasigamani”, age: 24, role: “JSWizard”},
+{firstName: “Anand”, lastName: “Babu”, age: 28, role: “Coder”}
+]
+
+var array =[[[“firstname”,”leena”],[“lastname”,”DievaSigamani”],[“age”,24],[“role”,”JSWizard”]],[[“firstname”,”Anand”],[“lastname”,”Babu”],[“age”,28],[“role”, “Coder”]]];
+var final=[]
+while(array.length!=0)
+{
+ var outer_remove = array.shift();
+ 
+ while(outer_remove.length!=0)
+ {
+ var inner_remove = outer_remove.shift()
+ var key = inner_remove[0]
+ var value =inner_remove[1]
+ new_object[key]=value
+ }
+ final.push(new_object)
+}
+
+
+10. Sum of odd numbers in an array
+
+
+var as=[12,34,5,6,2,56,6,2,1];
+var s=as.reduce(function(a,c){
+ if(c%2!=0)
+ {
+ return a+c;
+ }
+ return a;});
+console.log(s);
+
+11. Swap the odd and even digits
+
+aa = data=>{
+ var a=data;
+for(i=0;i<a.length-1;i++){
+ var l=’’;
+ var s=a[i+1]
+ var b=a[i]
+ l+=s
+ l+=b
+ i=i+1
+}
+if((a.length%2)!=0){
+ l+=a[a.length-1]
+}
+console.log(l);
+}
+aa(“1234”);
+
+
+
+
